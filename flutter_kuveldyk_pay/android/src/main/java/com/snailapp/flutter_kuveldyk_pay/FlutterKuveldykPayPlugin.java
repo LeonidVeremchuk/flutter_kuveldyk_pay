@@ -1,4 +1,4 @@
-package snail.app.flutter_kuveldyk_pay;
+package com.snailapp.flutter_kuveldyk_pay;
 
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;

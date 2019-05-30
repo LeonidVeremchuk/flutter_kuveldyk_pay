@@ -4,9 +4,9 @@
 Pod::Spec.new do |s|
   s.name             = 'flutter_kuveldyk_pay'
   s.version          = '0.0.1'
-  s.summary          = 'Flutter proting of braintree sdk'
+  s.summary          = 'A new Flutter plugin.'
   s.description      = <<-DESC
-Flutter proting of braintree sdk
+A new Flutter plugin.
                        DESC
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }

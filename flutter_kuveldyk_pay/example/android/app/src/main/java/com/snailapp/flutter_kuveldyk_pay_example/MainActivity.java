@@ -1,4 +1,4 @@
-package snail.app.flutter_kuveldyk_pay_example;
+package com.snailapp.flutter_kuveldyk_pay_example;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

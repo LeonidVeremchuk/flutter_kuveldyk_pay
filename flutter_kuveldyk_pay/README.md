@@ -1,6 +1,6 @@
 # flutter_kuveldyk_pay
 
-Flutter proting of braintree sdk
+A new Flutter plugin.
 
 ## Getting Started
 
