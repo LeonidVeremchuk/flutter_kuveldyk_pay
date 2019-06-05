@@ -1,4 +1,4 @@
-group 'com.snailapp.flutter_kuveldyk_pay'
+group 'com.snailapp.flutterkuveldykpay'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -20,6 +20,11 @@ rootProject.allprojects {
 }
 
 apply plugin: 'com.android.library'
+
+dependencies {
+    api 'com.braintreepayments.api:drop-in:3.+'
+    compileOnly files('tmplibs/flutter.jar')
+}
 
 android {
     compileSdkVersion 28
