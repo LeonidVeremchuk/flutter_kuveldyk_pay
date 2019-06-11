@@ -22,7 +22,9 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 dependencies {
-    api 'com.braintreepayments.api:drop-in:3.+'
+    //noinspection GradleDependency
+    implementation 'com.braintreepayments.api:drop-in:3.7.1'
+    implementation 'com.braintreepayments.api:braintree:2.22.0'
     compileOnly files('tmplibs/flutter.jar')
 }
 
@@ -35,5 +37,9 @@ android {
     }
     lintOptions {
         disable 'InvalidPackage'
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
     }
 }
