@@ -1,0 +1,45 @@
+group 'com.snailapp.flutterkuveldykpay'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+dependencies {
+    //noinspection GradleDependency
+    implementation 'com.braintreepayments.api:drop-in:3.7.1'
+    implementation 'com.braintreepayments.api:braintree:2.22.0'
+    compileOnly files('tmplibs/flutter.jar')
+}
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 21
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}

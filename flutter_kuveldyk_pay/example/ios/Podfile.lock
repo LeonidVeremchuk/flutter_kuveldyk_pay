@@ -1,0 +1,68 @@
+PODS:
+  - Braintree/Card (4.23.0):
+    - Braintree/Core
+  - Braintree/Core (4.23.0)
+  - Braintree/PaymentFlow (4.23.0):
+    - Braintree/Card
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPal (4.23.0):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.23.0):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.23.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.23.0)
+  - Braintree/UnionPay (4.23.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/Venmo (4.23.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+  - BraintreeDropIn (7.1.0):
+    - BraintreeDropIn/DropIn (= 7.1.0)
+  - BraintreeDropIn/DropIn (7.1.0):
+    - Braintree/Card (~> 4.23)
+    - Braintree/Core (~> 4.23)
+    - Braintree/PaymentFlow (~> 4.23)
+    - Braintree/PayPal (~> 4.23)
+    - Braintree/UnionPay (~> 4.23)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (7.1.0)
+  - Flutter (1.0.0)
+  - flutter_kuveldyk_pay (0.0.1):
+    - Braintree/PayPal
+    - Braintree/Venmo
+    - BraintreeDropIn
+    - Flutter
+
+DEPENDENCIES:
+  - Braintree/PayPal
+  - Braintree/Venmo
+  - Flutter (from `.symlinks/flutter/ios`)
+  - flutter_kuveldyk_pay (from `.symlinks/plugins/flutter_kuveldyk_pay/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Braintree
+    - BraintreeDropIn
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  flutter_kuveldyk_pay:
+    :path: ".symlinks/plugins/flutter_kuveldyk_pay/ios"
+
+SPEC CHECKSUMS:
+  Braintree: b5841b9b1c1dadc86959db3e29d36099b67f91bf
+  BraintreeDropIn: a019fcbf4edb87c55780ec01d5db3998b19164ce
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  flutter_kuveldyk_pay: dec4c67721a7127eeb82a3e48c36c0c59226f506
+
+PODFILE CHECKSUM: cbb7dd26258d0dc75ebf027a12bf333f216fe943
+
+COCOAPODS: 1.5.3
