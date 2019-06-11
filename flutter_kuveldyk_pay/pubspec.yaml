@@ -1,8 +1,8 @@
 name: flutter_kuveldyk_pay
 description: A new Flutter plugin.
-version: 0.0.1
-author:
-homepage:
+version: 0.1.0
+author: Leonid Veremchuk<leonid.veremchuk@gmail.com>
+homepage: https://github.com/Snailapp
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
