@@ -48,20 +48,9 @@ public class SwiftFlutterKuveldykPayPlugin: NSObject, FlutterPlugin {
             currentViewController.dismiss(animated: true, completion: nil)
         }
         
-        let tapDropIn = UITapGestureRecognizer(target: self, action: #selector(tapdropInAction))
-        
-        dropIn?.view.addGestureRecognizer(tapDropIn)
-        
         currentViewController.present(dropIn!, animated: true, completion: nil)
     }
     
-    @objc func tapdropInAction(recognizer: UITapGestureRecognizer) {
-        guard let currentViewController = UIApplication.shared.keyWindow?.topMostViewController() else {
-            return
-        }
-        self.flutterResult("CANCELLED")
-        currentViewController.dismiss(animated: true, completion: nil)
-    }
 }
 
 extension UIWindow {
