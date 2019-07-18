@@ -40,6 +40,7 @@ public class FlutterKuveldykPayPlugin implements MethodCallHandler, PluginRegist
       lastPaymentCall = new PaymentCall(call, result);
       mActivity.runOnUiThread(() -> {
         DropInRequest request = new DropInRequest().clientToken(lastPaymentCall.token()).amount(lastPaymentCall.amount());
+        request.disableVenmo();
         mActivity.startActivityForResult(request.getIntent(mActivity), DROP_IN_REQUEST_CODE);
 
       });
