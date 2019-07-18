@@ -29,6 +29,7 @@ public class SwiftFlutterKuveldykPayPlugin: NSObject, FlutterPlugin {
         
         let request =  BTDropInRequest()
         request.vaultManager = true
+        request.venmoDisabled = true
         request.amount = amount
         let dropIn = BTDropInController(authorization: token, request: request)
         {
