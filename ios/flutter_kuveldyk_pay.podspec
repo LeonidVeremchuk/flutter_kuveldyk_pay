@@ -3,8 +3,8 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_kuveldyk_pay'
-  s.version          = '0.1.4'
-  s.summary          = 'A new Flutter plugin.'
+  s.version          = '0.1.5'
+  s.summary          = 'Braintree wrapper for Flutter.'
   s.description      = <<-DESC
 A new Flutter plugin.
                        DESC
@@ -15,10 +15,10 @@ A new Flutter plugin.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'BraintreeDropIn'
-  s.dependency 'Braintree/PayPal'
+  s.dependency 'Braintree'
+  s.dependency 'Braintree/DataCollector'
   s.dependency 'Braintree/Venmo'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 end
 
